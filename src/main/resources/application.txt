@@ -1,0 +1,62 @@
+# ===============================
+# 📦 프로젝트 설정
+# ===============================
+spring.application.name=speedtest
+server.port=8787
+
+
+# ===============================
+# 🛢️ MySQL 데이터베이스 설정
+# ===============================
+spring.datasource.url=jdbc:mysql://localhost:3310/searchtest?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=root
+spring.datasource.password=1234
+
+
+# ===============================
+# 🧬 JPA 설정
+# ===============================
+
+# 애플리케이션 시작 시 DB 테이블 자동 생성 또는 업데이트
+spring.jpa.hibernate.ddl-auto=update
+
+# 실행되는 SQL 콘솔 출력 여부
+spring.jpa.show-sql=true
+
+# SQL 문 포맷팅 여부 (가독성 향상)
+spring.jpa.properties.hibernate.format_sql=true
+
+
+# ===============================
+# 📦 JPA 배치 Insert 최적화
+# ===============================
+
+# 한 번에 1000건씩 insert (성능 향상)
+spring.jpa.properties.hibernate.jdbc.batch_size=1000
+
+# insert 문 정렬 (쿼리 정리 및 성능 최적화)
+spring.jpa.properties.hibernate.order_inserts=true
+
+# update 문 정렬
+spring.jpa.properties.hibernate.order_updates=true
+
+# Hibernate 통계 출력 (성능 디버깅용)
+spring.jpa.properties.hibernate.generate_statistics=true
+
+
+# ===============================
+# 🔍 Elasticsearch 설정
+# ===============================
+
+# Elasticsearch 접속 주소
+spring.elasticsearch.uris=http://localhost:9200
+
+# 연결 타임아웃 (ms)
+spring.elasticsearch.connection-timeout=5000
+
+# 소켓 응답 타임아웃 (ms)
+spring.elasticsearch.socket-timeout=10000
+
+# 인덱스 자동 생성 비활성화 (수동 JSON 설정 사용 시 필요)
+spring.elasticsearch.index.auto-create=false
