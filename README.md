@@ -115,8 +115,7 @@ docker restart elasticsearch
 
 ---
 
-
-![속도비교](https://github.com/user-attachments/assets/ca2ce005-3235-44ee-9d78-186a0bc973fa)
+![속도비교](https://github.com/user-attachments/assets/bbb93752-6895-41cb-a89d-78278dd6f424)
 
 
 
