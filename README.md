@@ -1,4 +1,4 @@
-# 🔍 검색 속도 비교 프로젝트: RDBMS vs Elasticsearch
+# 🔍 검색 속도 비교 프로젝트 : RDBMS vs Elasticsearch
 
 본 프로젝트는 **Spring Boot 기반 웹 애플리케이션**에서 **RDBMS(JPA)와 Elasticsearch 간의 검색 성능을 비교**하고, 자동완성 기능의 
 실효성을 검증하기 위한 실험 프로젝트입니다.
